@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
 html {
   font-size: 14px;
 }
-@media (min-width: 768px) {
-    html {
-    font-size: 16px;
-  }
+
+body{
+  font-family: 'Roboto', sans-serif !important;
 }
+
 .pricing-header {
   max-width: 700px;
 }
@@ -15,28 +17,107 @@ html {
 }
   
 .jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-color: white;
-    border-radius: 0 !important;
-    border-bottom: 0.1rem solid #ddd;
+    padding: 2rem 1rem;margin-bottom: 2rem;background-color: white;border-radius: 0 !important;border-bottom: 0.1rem solid #ddd;
 }
 
 .footer-grey {
-  padding: 2rem 1rem;
-  background-color: #f9fafc;
+  font-family: 'Montserrat', sans-serif !important;padding: 2rem 1rem;background-color: #f9fafc;
 }
 
 .footer-blue {
-  padding: 2rem 1rem;
-  background-color: #3697ff;
+  padding: 2rem 1rem;background-color: #3697ff;
 }
 
 .navbar-toggler {
-    background-color: transparent;
-    border: 1px solid grey !important;
+    background-color: transparent;border: 1px solid grey !important;
 }
 
 footer li a {
-  color: white !important;
+  color: #e3e4e7 !important;
 }
+
+.jmbrt-head {
+  font-family: 'Montserrat', sans-serif !important;font-size: 3rem;font-weight: 700;
+}
+
+.sub-head {
+  font-family: 'Montserrat', sans-serif !important;font-size: 2rem;font-weight: 400;
+}
+.content-head {
+  font-family: 'Montserrat', sans-serif !important;font-size: 1.2rem;font-weight: 400;
+}
+
+.head-middle {
+  font-family: 'Montserrat', sans-serif !important;font-size: 2rem;font-weight: 700;
+}
+
+.content-middle {
+  font-family: 'Montserrat', sans-serif !important;font-size: 1.6rem;font-weight: 400;
+}
+
+.head-middle-thin {
+  font-family: 'Montserrat', sans-serif !important;font-size: 2rem;font-weight: 400;
+}
+
+.head-package {
+  font-family: 'Montserrat', sans-serif !important;font-size: 1.5rem;font-weight: 700;
+}
+.content-package {
+  font-family: 'Roboto', sans-serif !important;font-size: 1.2rem;font-weight: 300;
+}
+
+.content-laravel-top {
+  font-family: 'Montserrat', sans-serif !important;font-size: 1.2rem;font-weight: 300;
+}
+
+.content-help {
+  font-family: 'Montserrat', sans-serif !important;font-size: 2rem;font-weight: 400;
+}
+
+.bg-footer {
+  background-color: #373839 !important;
+}
+
+.head-footer {
+  color: #9c9ea0;
+  font-weight: bold;
+}
+
+.payment-method {
+  border: 1px solid #a0a1a3;
+  padding: 0.6rem;
+  height: 35px;
+  border-radius: 4px;
+  -webkit-filter: grayscale(1);
+  opacity: 1;
+}
+
+.btn-primary-custom {
+  color: #fff !important;
+  background-color: #007bff !important;
+  border-color: #007bff;
+  border: 2px solid;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.btn-secondary-custom {
+  border: 2px solid;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.bg-primary-paket {
+  background-color: #0264cc !important;
+}
+
+.link-top a {
+  color: #373839;
+}
+
+@media (min-width: 768px) {
+  .table-perform {
+    max-width: 70%;
+  }
+}
+

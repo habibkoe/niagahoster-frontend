@@ -1,44 +1,29 @@
 # Version
-version: '3.1'
+version: '3.6'
 
 # Setup
 services:
 # PHP
   php:
-    depends_on:
-       - db
-    image: niagahoster-frontend
-    restart: always
-    ports:
-       - 5005:80
-    volumes:
-       - ./dev:/var/www/html/
-
-# PHPMyAdmin
-  phpmyadmin:
-    depends_on:
-       - db
-    image: phpmyadmin/phpmyadmin
-    restart: always
-    ports:
-       - 5050:80
-    environment:
-       PMA_HOST: db
+   depends_on:
+      - db
+   image: niagahoster-frontend
+   restart: always
+   ports:
+      - 5005:80
+   volumes:
+      - ./dev:/var/www/html/
 
 # MySQL
   db:
-    image: mysql:5
-    restart: always
-    volumes:
-       - mysqlniaga:/var/lib/mysql
-    environment:
-       MYSQL_DATABASE: 'niaga_web'
-       MYSQL_USER: 'habib'
-       MYSQL_PASSWORD: 'rahasia'
-       MYSQL_ROOT_PASSWORD: 'rahasia'
-    ports:
-       - 3376:3306
-
-# Volumes
-volumes:
-  mysqlniaga:
+   image: mysql:5
+   restart: always
+   environment:
+      MYSQL_DATABASE: 'niaga_web'
+      MYSQL_USER: 'habib'
+      MYSQL_PASSWORD: 'rahasia'
+      MYSQL_ROOT_PASSWORD: 'rahasia'
+   ports:
+      - 3376:3306
+   volumes:
+      - ./init:/docker-entrypoint-initdb.d
